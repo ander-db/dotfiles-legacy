@@ -12,3 +12,9 @@ syntax on
 colorscheme gruvbox
 
 " airline symbols
+"
+"lua require'lspconfig'.pyright.setup{}
+"lua require('lua.init')
+lua require('python-ls')
+lua require('lsp-mapping')
+"lua require('telescope')

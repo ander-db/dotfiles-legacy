@@ -24,10 +24,10 @@ nnoremap <C-Q> :wq!<CR>
 "noremap <c-u> viwU<Esc>
 
 " TAB in general mode will move to text buffer
-nnoremap <TAB> :bnext<CR>
+"nnoremap <TAB> :bnext<CR>
 
 " SHIFT-TAB will go back
-nnoremap <S-TAB> :bprevious<CR>
+"nnoremap <S-TAB> :bprevious<CR>
 
 " <TAB>: completion.
 "inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
@@ -42,9 +42,13 @@ vnoremap > >gv
 "nmap <silent> gi <Plug>(coc-implementation)
 "nmap <silent> gr <Plug>(coc-references)
 
-nnoremap <C-f> :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
+"nnoremap <C-f> :NERDTreeFocus<CR>
+"nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
+
+
+nnoremap <C-f> :lua require('telescope.builtin').find_files({layout_strategy='horizontal',layout_config={width=0.9}})<CR>
+
 
 "nnoremap <Leader>o o<Esc>^Da
 "nnoremap <Leader>O O<Esc>^Da
