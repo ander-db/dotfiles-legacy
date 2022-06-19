@@ -15,6 +15,9 @@ colorscheme gruvbox
 "
 "lua require'lspconfig'.pyright.setup{}
 "lua require('lua.init')
-lua require('python-ls')
+"lua require('python-ls')
+lua require('nvim-cmp')
 lua require('lsp-mapping')
 "lua require('telescope')
+
+
