@@ -1,3 +1,7 @@
+source $HOME/.config/nvim/keys/lsp-keymaps.vim
+source $HOME/.config/nvim/keys/nerdcomment.vim
+source $HOME/.config/nvim/keys/telescope.vim
+
 " I hate escape more than anything else
 inoremap jk <Esc>
 inoremap kj <Esc>

@@ -1,21 +1,35 @@
-requre'nvim-treesitter.configs'.setup {
-  -- A list of parser names, or "all"
-  ensure_installed = { "c", "cpp", "python", "lua", "javascript", "java" },
+require'nvim-treesitter.configs'.setup {
+    -- ensure_installed can be "all" or a list of languages { "python", "javascript" }
+    ensure_installed = {"python", "cpp", "bash", "javascript", "clojure", "go"},
 
-  -- Install parsers synchronously (only applied to `ensure_installed`)
-  sync_install = false,
-
-  -- List of parsers to ignore installing (for "all")
-  ignore_install = { "javascript" },
-
-  highlight = {
-    -- `false` will disable the whole extension
-    enable = true,
-
-    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
-    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
-    -- Using this option may slow down your editor, and you may see some duplicate highlights.
-    -- Instead of true it can also be a list of languages
-    additional_vim_regex_highlighting = false,
-  },
+    highlight = { -- enable highlighting for all file types
+      enable = true, -- you can also use a table with list of langs here (e.g. { "python", "javascript" })
+    },
+    incremental_selection = {
+      enable = true,  -- you can also use a table with list of langs here (e.g. { "python", "javascript" })
+      -- disable = { "cpp", "lua" },
+      keymaps = {                       -- mappings for incremental selection (visual mappings)
+        init_selection = "gnn",         -- maps in normal mode to init the node/scope selection
+        node_incremental = "grn",       -- increment to the upper named parent
+        scope_incremental = "grc",      -- increment to the upper scope (as defined in locals.scm)
+        node_decremental = "grm",       -- decrement to the previous node
+      }
+    },
+    textobjects = {
+      -- These are provided by 
+      select = {
+        enable = true,  -- you can also use a table with list of langs here (e.g. { "python", "javascript" })
+        keymaps = {
+          -- You can use the capture groups defined here:
+	  -- https://github.com/nvim-treesitter/nvim-treesitter-textobjects/blob/master/queries/c/textobjects.scm
+          ["af"] = "@function.outer",
+          ["if"] = "@function.inner",
+          ["ab"] = "@block.outer",
+          ["ib"] = "@block.inner",
+          ["as"] = "@statement.outer",
+          ["is"] = "@statement.inner",
+        },
+      },
+    },
 }
+

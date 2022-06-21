@@ -4,8 +4,6 @@
 
 using namespace std;
 
-ent 
-return 0;
 
 
 /**
@@ -20,15 +18,15 @@ int func1()
 int main() {
 
 
-  func1();
+             func1();
 
-  string a = "asdfasdfa";
+            string a = "asdfasd asdfasd as df asdf asdfsd;fl; asjdflk jasdlkfjlasd fa";
 
-  cout << a << endl;
+                  cout << a << endl;
 
-  for (auto &elem : a) {
-    cout << elem << endl;
-  }
+                    for (auto &elem : a) {
+                      cout << elem << endl;
+            }
 
-  return 0;
-}
+              return 0;
+      }
