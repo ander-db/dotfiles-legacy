@@ -30,6 +30,8 @@ call plug#begin('~/local/share/nvim/plugged')
     Plug 'preservim/nerdtree'   "Nerdtree
     Plug 'morhetz/gruvbox'      "Tema gruvbox
 
+    Plug 'tpope/vim-fugitive'
+
 "Plug 'dracula/vim', {'as':'dracula'}
 "Plug 'ryanoasis/vim-devicons' "Developer icons
 "Plug 'sheerun/vim-polyglot' "Syntax highlight codigo
