@@ -35,6 +35,9 @@ Add the LSP servers installed to .config/lua/\_nvim-lspconfig.lua:
 - Git: lewis6991/gitsigns.nvim
 - LSP: neovim/nvim-lspconfig
 - LSPInstaller: williamboman/nvim-lsp-installer
+- Autocomplete: hrsh7th/nvim-cmp
+- LSPAutocomplete:  hrsh7th/cmp-nvim-lsp
+- Highlighting: nvim-treesitter/nvim-treesitter
 
 - Treesitter: nvim-treesitter/nvim-treesitter
 - nvim-cmp:
