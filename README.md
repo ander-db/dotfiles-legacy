@@ -38,12 +38,11 @@ Add the LSP servers installed to .config/lua/\_nvim-lspconfig.lua:
 - Autocomplete: hrsh7th/nvim-cmp
 - LSPAutocomplete:  hrsh7th/cmp-nvim-lsp
 - Highlighting: nvim-treesitter/nvim-treesitter
+- File finder: nvim-telescope/telescope.nvim
 
 - Treesitter: nvim-treesitter/nvim-treesitter
-- nvim-cmp:
+
 - Comments: preservim/nerdcommenter
-
-
 - Rainbox parenthesis
 - Autoclose parenthesis
 - Sticky scroll
@@ -86,4 +85,7 @@ Add the LSP servers installed to .config/lua/\_nvim-lspconfig.lua:
 `<C-e>` -> Hide options
 `<CR>` -> Confirm option
 
-
+### Telescope
+`<leader>ff` -> File finder
+`<leader>fg` -> Live grep
+`<leader>` -> Buffer finder

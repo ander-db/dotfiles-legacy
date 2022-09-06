@@ -1,5 +1,6 @@
 
-
+require("core.general")
+require("core.keymaps")
 
 require("plugins")
 
@@ -12,3 +13,4 @@ require("_nvim-lsp-installer")
 require("_nvim-lspconfig")
 require("_nvim-cmp")
 require("_nvim-treesitter")
+require("_telescope")
