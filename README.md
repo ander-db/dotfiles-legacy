@@ -51,7 +51,7 @@ Add the LSP servers installed to .config/lua/\_nvim-lspconfig.lua:
 ### General
 `<C-t>` -> Open/Close nvim-tree
 
-`:buffers` <Tab> -> List of buffers
+`:buffers <Tab>` -> List of buffers
 `:bd` -> Close buffer
 
 ### nvim-tree
