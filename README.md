@@ -49,17 +49,17 @@ Add the LSP servers installed to .config/lua/\_nvim-lspconfig.lua:
 
 ## Keymaps cheat sheet
 ### General
-<C-t> -> Open/Close nvim-tree
+`<C-t>` -> Open/Close nvim-tree
 
-:buffers <Tab> -> List of buffers
-:bd -> Close buffer
+`:buffers` <Tab> -> List of buffers
+`:bd` -> Close buffer
 
 ### nvim-tree
-u -> Set directory up
-i -> Set directory
-<C-h> -> split horizontally
-<C-v> -> vertical split
-S -> Search
+`u` -> Set directory up
+`i` -> Set directory
+`<C-h>` -> split horizontally
+`<C-v>` -> vertical split
+`S` -> Search
 
 ### Gitsigns
 
