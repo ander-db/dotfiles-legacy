@@ -1,8 +1,13 @@
+class al:
+    def __init__(self):
+        a = 1
 
-def algo():
-    """
-        Esto es la documentacion
-    """
-    print("hola")
+    def algo():
+        """
+            Esto es la documentacion
+        """
+        print("hola")
 
-algo()
+b =  al()
+al.algo()
+

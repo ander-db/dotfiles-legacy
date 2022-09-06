@@ -13,4 +13,7 @@ return require('packer').startup(function(use)
   use 'lewis6991/gitsigns.nvim'
   use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
   use 'williamboman/nvim-lsp-installer'
+
+  use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-nvim-lsp'
 end)

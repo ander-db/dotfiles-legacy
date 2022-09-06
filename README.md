@@ -76,6 +76,11 @@ Add the LSP servers installed to .config/lua/\_nvim-lspconfig.lua:
 
 `:LspInstall`
 
-
+### nvim-cmp
+`<C-Space>` -> Autocomplete options
+`<tab>` -> Next item
+`<S-tab>` -> Prev item
+`<C-e>` -> Hide options
+`<CR>` -> Confirm option
 
 
