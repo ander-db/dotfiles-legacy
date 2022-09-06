@@ -15,6 +15,15 @@ From nvim:
 :source %
 ```
 
+Restart nvim and select Language Servers to install:
+```bash
+:LspInstall
+```
+
+Add the LSP servers installed to .config/lua/\_nvim-lspconfig.lua:
+`local servers = { List of TLS servers... }`
+
+
 
 ## List of pluggins
 - Gruvbox: morhetz/gruvbox
@@ -24,10 +33,9 @@ From nvim:
 - Info line: nvim-lualine/lualine.nvim
 - Scroll smooth: karb94/neoscroll.nvim
 - Git: lewis6991/gitsigns.nvim
+- LSP: neovim/nvim-lspconfig
+- LSPInstaller: williamboman/nvim-lsp-installer
 
-
-- LSP
-- Gitgutter: airblade/vim-gitgutter
 - Treesitter: nvim-treesitter/nvim-treesitter
 - nvim-cmp:
 - Comments: preservim/nerdcommenter
@@ -54,4 +62,14 @@ i -> Set directory
 S -> Search
 
 ### Gitsigns
+
+### LSP
+:LspInfo
+
+### LSPInstaller
+:LspInstallInfo
+:LspInstall
+
+
+
 
