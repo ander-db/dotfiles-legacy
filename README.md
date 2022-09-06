@@ -26,66 +26,66 @@ Add the LSP servers installed to .config/lua/\_nvim-lspconfig.lua:
 
 
 ## List of pluggins
-- Gruvbox: morhetz/gruvbox
-- Dracula: dracula/vim
-
-- File explorer: kyazdani42/nvim-tree.lua
-- Info line: nvim-lualine/lualine.nvim
-- Scroll smooth: karb94/neoscroll.nvim
-- Git: lewis6991/gitsigns.nvim
-- LSP: neovim/nvim-lspconfig
-- LSPInstaller: williamboman/nvim-lsp-installer
-- Autocomplete: hrsh7th/nvim-cmp
-- LSPAutocomplete:  hrsh7th/cmp-nvim-lsp
-- Highlighting: nvim-treesitter/nvim-treesitter
-- File finder: nvim-telescope/telescope.nvim
-
-- Treesitter: nvim-treesitter/nvim-treesitter
-
-- Comments: preservim/nerdcommenter
-- Rainbox parenthesis
-- Autoclose parenthesis
-- Sticky scroll
-- Custom icons
+  * Gruvbox: morhetz/gruvbox
+  * Dracula: dracula/vim
+  
+  * File explorer: kyazdani42/nvim-tree.lua
+  * Info line: nvim-lualine/lualine.nvim
+  * Scroll smooth: karb94/neoscroll.nvim
+  * Git: lewis6991/gitsigns.nvim
+  * LSP: neovim/nvim-lspconfig
+  * LSPInstaller: williamboman/nvim-lsp-installer
+  * Autocomplete: hrsh7th/nvim-cmp
+  * LSPAutocomplete:  hrsh7th/cmp-nvim-lsp
+  * Highlighting: nvim-treesitter/nvim-treesitter
+  * File finder: nvim-telescope/telescope.nvim
+  
+  * Treesitter: nvim-treesitter/nvim-treesitter
+  
+  * Comments: preservim/nerdcommenter
+  * Rainbox parenthesis
+  * Autoclose parenthesis
+  * Sticky scroll
+  * Custom icons
 
 
 ## Keymaps cheat sheet
 ### General
-`<C-t>` -> Open/Close nvim-tree
-
-`:buffers <Tab>` -> List of buffers
-
-`:bd` -> Close buffer
+  * `<C-t>` -> Open/Close nvim-tree
+  * `:buffers <Tab>` -> List of buffers
+  * `:bd` -> Close buffer
 
 ### nvim-tree
-`u` -> Set directory up
-
-`i` -> Set directory
-
-`<C-h>` -> split horizontally
-
-`<C-v>` -> vertical split
-
-`S` -> Search
+  
+  * `u` -> Set directory up
+  * `i` -> Set directory
+  * `<C-h>` -> split horizontally
+  * `<C-v>` -> vertical split
+  * `S` -> Search
 
 ### Gitsigns
 
 ### LSP
-`:LspInfo`
+  * `:LspInfo`
+  * `K` -> Hover information
+  * `gd` -> Go to definition
+  * `gD` -> Go to Declaration
+  * `<space>rn` -> Rename
+  * `<space>ca` -> Code action
+  * `<space>f` -> Auto formatting
 
 ### LSPInstaller
-`:LspInstallInfo`
-
-`:LspInstall`
+  * `:LspInstallInfo`
+  * `:LspInstall`
 
 ### nvim-cmp
-`<C-Space>` -> Autocomplete options
-`<tab>` -> Next item
-`<S-tab>` -> Prev item
-`<C-e>` -> Hide options
-`<CR>` -> Confirm option
+  * `<C-Space>` -> Autocomplete options
+  * `<tab>` -> Next item
+  * `<S-tab>` -> Prev item
+  * `<C-e>` -> Hide options
+  * `<CR>` -> Confirm option
 
 ### Telescope
-`<leader>ff` -> File finder
-`<leader>fg` -> Live grep
-`<leader>` -> Buffer finder
+  * `<leader>ff` -> File finder
+  * `<leader>fg` -> Live grep
+  * `<leader>fb` -> Buffer finder

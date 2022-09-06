@@ -5,8 +5,8 @@ class al:
     def algo():
         """
             Esto es la documentacion
-        """
-        print("hola")
+            """
+ 
 
 b =  al()
 al.algo()
