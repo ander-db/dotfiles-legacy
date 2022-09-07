@@ -28,26 +28,26 @@ local servers = { List of TLS servers... }
 
 
 ## List of pluggins
-  * *Packer*: wthomason/packer.nvim
+  * **Packer**: wthomason/packer.nvim
 
-  * *Gruvbox*: morhetz/gruvbox
-  * *Dracula*: dracula/vim
+  * **Gruvbox**: morhetz/gruvbox
+  * **Dracula**: dracula/vim
   
-  * *File explorer*: kyazdani42/nvim-tree.lua
-  * *Info line*: nvim-lualine/lualine.nvim
-  * *Scroll smooth*: karb94/neoscroll.nvim
-  * *Git*: lewis6991/gitsigns.nvim
-  * *LSP*: neovim/nvim-lspconfig
-  * *LSPInstaller*: williamboman/nvim-lsp-installer
-  * *Autocomplete*: hrsh7th/nvim-cmp
-  * *LSPAutocomplete*:  hrsh7th/cmp-nvim-lsp
-  * *Highlighting*: nvim-treesitter/nvim-treesitter
-  * *File finder*: nvim-telescope/telescope.nvim
-  * *Treesitter*: nvim-treesitter/nvim-treesitter
-  * *Sticky scroll*: nvim-treesitter/nvim-treesitter-context
-  * *Autoclose parenthesis*: windwp/nvim-autopairs
-  * *Autocomplete icons*: onsails/lspkind.nvim
-  * *Snippets*: L3MON4D3/LuaSnip
+  * **File explorer**: kyazdani42/nvim-tree.lua
+  * **Info line**: nvim-lualine/lualine.nvim
+  * **Scroll smooth**: karb94/neoscroll.nvim
+  * **Git**: lewis6991/gitsigns.nvim
+  * **LSP**: neovim/nvim-lspconfig
+  * **LSPInstaller**: williamboman/nvim-lsp-installer
+  * **Autocomplete**: hrsh7th/nvim-cmp
+  * **LSPAutocomplete**:  hrsh7th/cmp-nvim-lsp
+  * **Highlighting**: nvim-treesitter/nvim-treesitter
+  * **File finder**: nvim-telescope/telescope.nvim
+  * **Treesitter**: nvim-treesitter/nvim-treesitter
+  * **Sticky scroll**: nvim-treesitter/nvim-treesitter-context
+  * **Autoclose parenthesis**: windwp/nvim-autopairs
+  * **Autocomplete icons**: onsails/lspkind.nvim
+  * **Snippets**: L3MON4D3/LuaSnip
   
 
 ## Keymaps cheat sheet
