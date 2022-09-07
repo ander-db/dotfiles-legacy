@@ -22,7 +22,7 @@ Reopen nvim and Install the Language Servers:
 
 Edit `.config/lua/_nvim-lspconfig.lua` and add the Language Servers Installed:
 ```
-local servers = { List of TLS servers... }
+local servers = { List of LSP servers... }
 ```
 
 
