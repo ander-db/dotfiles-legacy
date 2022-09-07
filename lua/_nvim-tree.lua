@@ -11,25 +11,25 @@ require("nvim-tree").setup({
     mappings = {
       list = {
         { key = "u", action = "dir_up" },
-	{ key = "i", action = "cd" },
-	{ key = "<C-t>", action = "close"},
-	{ key = "<C-h>", action = "split"}
+        { key = "i", action = "cd" },
+        { key = "<C-t>", action = "close" },
+        { key = "<C-x>", action = "split" }
       },
     },
   },
   renderer = {
     group_empty = false,
     indent_markers = {
-          enable = false,
-          inline_arrows = true,
-          icons = {
-            corner = " ",
-            edge = " ",
-            item = "┊",
-            bottom = "",
-            none = " ",
-          },
-        },
+      enable = false,
+      inline_arrows = true,
+      icons = {
+        corner = " ",
+        edge = " ",
+        item = "┊",
+        bottom = "",
+        none = " ",
+      },
+    },
 
 
   },
@@ -40,4 +40,3 @@ require("nvim-tree").setup({
 
 
 map("n", "<C-t>", ":NvimTreeToggle<CR>", { silent = true })
-

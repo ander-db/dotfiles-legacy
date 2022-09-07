@@ -1,17 +1,13 @@
-
 #include <iostream>
 
 using namespace std;
 
-/** Pruebas
+/*
+ * Test func
  */
-int funcMal() { return 2; }
-
-int main() {
-  int a = 1;
-
-  int b = 2;
-
-  return 0;
+int func(int a, int b) {
+  return a + b;
 }
 
+
+int c = func(1, 2);
