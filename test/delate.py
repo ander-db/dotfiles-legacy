@@ -11,3 +11,8 @@ class al:
 b =  al()
 al.algo()
 
+
+def testset():
+    return 1
+
+testset

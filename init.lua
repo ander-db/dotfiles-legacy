@@ -13,3 +13,6 @@ require("_nvim-lspconfig")
 require("_nvim-cmp")
 require("_nvim-treesitter")
 require("_telescope")
+require("_nvim-autopairs")
+require("_nvim-treesitter-context")
+

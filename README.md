@@ -3,25 +3,27 @@
 
 ## How to set up
 
-From .config folder:
+Install packer:
 ```bash
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
 
-From nvim:
-```bash
+From lua/plugins.lua:
+```
 :PackerSync
-:source %
+:wq
 ```
 
-Restart nvim and select Language Servers to install:
-```bash
-:LspInstall
+Reopen nvim and Install the Language Servers:
+```
+:LspInstallInfo
 ```
 
-Add the LSP servers installed to .config/lua/\_nvim-lspconfig.lua:
-`local servers = { List of TLS servers... }`
+Edit `.config/lua/_nvim-lspconfig.lua` and add the Language Servers Installed:
+```
+local servers = { List of TLS servers... }
+```
 
 
 
@@ -39,31 +41,41 @@ Add the LSP servers installed to .config/lua/\_nvim-lspconfig.lua:
   * LSPAutocomplete:  hrsh7th/cmp-nvim-lsp
   * Highlighting: nvim-treesitter/nvim-treesitter
   * File finder: nvim-telescope/telescope.nvim
-  
   * Treesitter: nvim-treesitter/nvim-treesitter
+  * Sticky scroll: nvim-treesitter/nvim-treesitter-context
+  * Autoclose parenthesis: windwp/nvim-autopairs
+  * Autocomplete icons: onsails/lspkind.nvim
+  * Snippets: L3MON4D3/LuaSnip
   
-  * Comments: preservim/nerdcommenter
-  * Rainbox parenthesis
-  * Autoclose parenthesis
-  * Sticky scroll
-  * Custom icons
-
 
 ## Keymaps cheat sheet
 ### General
   * `<C-t>` -> Open/Close nvim-tree
   * `:buffers <Tab>` -> List of buffers
   * `:bd` -> Close buffer
+  * `<leader>h` -> Navigate to the left
+  * `<leader>j` -> Navigate down
+  * `<leader>k` -> Navigate up
+  * `<leader>l` -> Navigate to the right
 
 ### nvim-tree
-  
   * `u` -> Set directory up
   * `i` -> Set directory
   * `<C-h>` -> split horizontally
   * `<C-v>` -> vertical split
   * `S` -> Search
 
-### Gitsigns
+### Telescope
+  * `<leader>ff` -> File finder
+  * `<leader>fg` -> Live grep
+  * `<leader>fb` -> Buffer finder
+
+### nvim-cmp
+  * `<C-Space>` -> Autocomplete options
+  * `<tab>` -> Next item
+  * `<S-tab>` -> Prev item
+  * `<C-e>` -> Hide options
+  * `<CR>` -> Confirm option
 
 ### LSP
   * `:LspInfo`
@@ -78,14 +90,3 @@ Add the LSP servers installed to .config/lua/\_nvim-lspconfig.lua:
   * `:LspInstallInfo`
   * `:LspInstall`
 
-### nvim-cmp
-  * `<C-Space>` -> Autocomplete options
-  * `<tab>` -> Next item
-  * `<S-tab>` -> Prev item
-  * `<C-e>` -> Hide options
-  * `<CR>` -> Confirm option
-
-### Telescope
-  * `<leader>ff` -> File finder
-  * `<leader>fg` -> Live grep
-  * `<leader>fb` -> Buffer finder
