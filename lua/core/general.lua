@@ -11,8 +11,6 @@ vim.api.nvim_set_option('cursorline', true)
 vim.api.nvim_set_option('splitbelow', true)
 vim.api.nvim_set_option('splitright', true)
 vim.api.nvim_set_option('wrap', true)
+vim.api.nvim_set_option('clipboard', "unnamedplus")
 
 vim.opt.iskeyword:append("-")
-
-
-
