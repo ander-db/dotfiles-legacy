@@ -10,4 +10,5 @@ int func(int a, int b) {
 }
 
 
+
 int c = func(1, 2);
