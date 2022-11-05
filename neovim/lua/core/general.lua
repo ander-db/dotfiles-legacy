@@ -1,16 +1,26 @@
-vim.g.mapleader = ' ';
-vim.api.nvim_set_option('number', true)
-vim.api.nvim_set_option('relativenumber', true)
-vim.api.nvim_set_option('tabstop', 2)
-vim.api.nvim_set_option('shiftwidth', 2)
-vim.api.nvim_set_option('expandtab', true)
-vim.api.nvim_set_option('smarttab', true)
-vim.api.nvim_set_option('autoindent', true)
-vim.api.nvim_set_option('showtabline', 2)
-vim.api.nvim_set_option('cursorline', true)
-vim.api.nvim_set_option('splitbelow', true)
-vim.api.nvim_set_option('splitright', true)
-vim.api.nvim_set_option('wrap', true)
-vim.api.nvim_set_option('clipboard', "unnamedplus")
+local opt = vim.opt
+local cache_dir = vim.env.HOME .. '/.cache/nvim/'
 
-vim.opt.iskeyword:append("-")
+vim.g.mapleader = ' ';
+opt.relativenumber = true
+opt.number = true
+opt.tabstop = 2
+opt.shiftwidth = 2
+opt.expandtab = true
+opt.smarttab = true
+opt.autoindent = true
+opt.showtabline = 2
+opt.cursorline = true
+opt.splitbelow = true
+opt.splitright = true
+opt.wrap = true
+opt.iskeyword:append("-")
+opt.clipboard = 'unnamedplus'
+
+opt.swapfile = false
+opt.directory = cache_dir .. 'swap/'
+opt.undodir = cache_dir .. 'undo/'
+opt.backupdir = cache_dir .. 'backup/'
+opt.viewdir = cache_dir .. 'view/'
+opt.spellfile = cache_dir .. 'spell/en.uft-8.add'
+
