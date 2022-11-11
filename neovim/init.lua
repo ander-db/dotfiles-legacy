@@ -3,6 +3,7 @@ require("core.keymaps")
 
 require("plugins")
 
+require("_illuminate")
 require("_gruvbox")
 require("_nvim-tree")
 require("_lualine")

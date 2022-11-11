@@ -1,7 +1,15 @@
 const message = "Hello world!"
 
 console.log(message);
+console.log(message);
+console.log(message);
+console.log(message);
+console.log(message);
+console.log(message);
+console.log(message);
+console.log(message);
 
+console.log(message);
 
 const message = "Error!!!!";
 
@@ -9,12 +17,12 @@ const message = "Error!!!!";
   * Documentacion de la funcion suma
   *
   */
-const suma = (x, y) => {
+const resta = (x, y) => {
     return x + y;
 };
 
 
-const resultado = suma(1, 2);
+const resultado = resta(1, 2);
 console.log(resultado);
 
 asdfasf; asdlkfjasl;dfjkjsdaf;kaskdjfasjhf-

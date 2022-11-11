@@ -24,3 +24,5 @@ opt.undodir = cache_dir .. 'undo/'
 opt.backupdir = cache_dir .. 'backup/'
 opt.viewdir = cache_dir .. 'view/'
 opt.spellfile = cache_dir .. 'spell/en.uft-8.add'
+
+opt.termguicolors = true

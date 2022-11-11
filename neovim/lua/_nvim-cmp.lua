@@ -2,6 +2,20 @@ local lspkind = require('lspkind') --- Custom icons cmp
 
 local cmp = require 'cmp'
 
+
+local function border(hl_name)
+  return {
+    { "╭", hl_name },
+    { "─", hl_name },
+    { "╮", hl_name },
+    { "│", hl_name },
+    { "╯", hl_name },
+    { "─", hl_name },
+    { "╰", hl_name },
+    { "│", hl_name },
+  }
+end
+
 cmp.setup({
   formatting = {
     format = lspkind.cmp_format(),
@@ -18,6 +32,13 @@ cmp.setup({
   window = {
     -- completion = cmp.config.window.bordered(),
     -- documentation = cmp.config.window.bordered(),
+    completion = {
+      border = border "CmpBorder",
+      winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None",
+    },
+    documentation = {
+      border = border "CmpDocBorder",
+    },
   },
   mapping = cmp.mapping.preset.insert({
     ['<tab>'] = cmp.mapping.select_next_item(),
@@ -27,13 +48,12 @@ cmp.setup({
     ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `f
   }),
   sources = cmp.config.sources({
-    { name = 'nvim_lsp', max_item_count = 7},
+    { name = 'nvim_lsp', max_item_count = 7, keyword_length = 3 },
+    { name = 'buffer', max_item_count = 7, keyword_length = 3 },
     -- { name = 'vsnip' }, -- For vsnip users.
-    { name = 'luasnip', max_item_count = 7}, -- For luasnip users.
+    { name = 'luasnip', max_item_count = 7, keyword_length = 3 }, -- For luasnip users.
     -- { name = 'ultisnips' }, -- For ultisnips users.
     -- { name = 'snippy' }, -- For snippy users.
-  }, {
-    { name = 'buffer',  max_item_count = 7},
   }),
   completion = {
     --autocomplete = true
@@ -51,6 +71,9 @@ cmp.setup({
       cmp.length,
       cmp.order,
     },
+  },
+  experimental = {
+    ghost_text = true
   },
 })
 
@@ -81,5 +104,3 @@ cmp.setup.cmdline(':', {
     { name = 'cmdline' }
   })
 })
-
-

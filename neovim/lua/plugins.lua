@@ -1,7 +1,6 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
-
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
@@ -14,12 +13,15 @@ return require('packer').startup(function(use)
 
   use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
   use 'williamboman/nvim-lsp-installer'
-  use 'hrsh7th/nvim-cmp'
+
+  use 'hrsh7th/nvim-cmp' -- Configurations for nvim-cmp
   use 'hrsh7th/cmp-nvim-lsp'
 
   use 'nvim-treesitter/nvim-treesitter'
 
   use 'lewis6991/impatient.nvim'
+
+  use 'RRethy/vim-illuminate'
 
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
@@ -39,3 +41,4 @@ return require('packer').startup(function(use)
   use 'nvim-treesitter/nvim-treesitter-context'
   use 'L3MON4D3/LuaSnip'
 end)
+

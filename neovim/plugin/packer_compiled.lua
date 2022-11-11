@@ -175,6 +175,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/anderdb/.local/share/nvim/site/pack/packer/start/vim",
     url = "https://github.com/dracula/vim"
+  },
+  ["vim-illuminate"] = {
+    loaded = true,
+    path = "/home/anderdb/.local/share/nvim/site/pack/packer/start/vim-illuminate",
+    url = "https://github.com/RRethy/vim-illuminate"
   }
 }
 
