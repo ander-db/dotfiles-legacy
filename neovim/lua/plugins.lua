@@ -19,11 +19,19 @@ return require('packer').startup(function(use)
 
   use 'nvim-treesitter/nvim-treesitter'
 
+  use 'lewis6991/impatient.nvim'
+
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
     requires = {
       { 'nvim-lua/plenary.nvim' }
     }
+  }
+
+  use {
+    'mfussenegger/nvim-jdtls',
+    disable = false,
+    ft = "java"
   }
 
   use 'onsails/lspkind.nvim'

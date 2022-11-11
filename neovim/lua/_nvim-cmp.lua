@@ -27,15 +27,33 @@ cmp.setup({
     ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `f
   }),
   sources = cmp.config.sources({
-    { name = 'nvim_lsp' },
+    { name = 'nvim_lsp', max_item_count = 7},
     -- { name = 'vsnip' }, -- For vsnip users.
-    { name = 'luasnip' }, -- For luasnip users.
+    { name = 'luasnip', max_item_count = 7}, -- For luasnip users.
     -- { name = 'ultisnips' }, -- For ultisnips users.
     -- { name = 'snippy' }, -- For snippy users.
   }, {
-    { name = 'buffer' },
-  })
+    { name = 'buffer',  max_item_count = 7},
+  }),
+  completion = {
+    --autocomplete = true
+  },
+  sorting = {
+    priority_weight = 2.,
+    comparators = {
+      cmp.locality,
+      cmp.recently_used,
+      cmp.exact,
+      cmp.offset,
+      cmp.sort_text,
+      cmp.kind,
+      cmp.score,
+      cmp.length,
+      cmp.order,
+    },
+  },
 })
+
 
 -- Set configuration for specific filetype.
 cmp.setup.filetype('gitcommit', {
@@ -63,3 +81,5 @@ cmp.setup.cmdline(':', {
     { name = 'cmdline' }
   })
 })
+
+
