@@ -42,14 +42,6 @@ return require('packer').startup(function(use)
 
   use 'glepnir/dashboard-nvim'
 
-  --  use {
-  --    'goolord/alpha-nvim',
-  --    requires = { 'kyazdani42/nvim-web-devicons' },
-  --    config = function ()
-  --        require'alpha'.setup(require'alpha.themes.startify'.config)
-  --    end
-  --}
-
   use 'onsails/lspkind.nvim'
   use 'windwp/nvim-autopairs'
   use 'nvim-treesitter/nvim-treesitter-context'

@@ -50,6 +50,7 @@ local servers = { List of LSP servers... }
   * **Snippets**: L3MON4D3/LuaSnip
   * **Illuminate**: RRethy/vim-illuminate
   * **Which-key**: folke/which-key.nvim
+  * **Dashboard**: glepnir/dashboard-nvim
   
 
 ## Keymaps cheat sheet
