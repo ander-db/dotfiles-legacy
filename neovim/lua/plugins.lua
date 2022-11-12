@@ -36,6 +36,8 @@ return require('packer').startup(function(use)
     ft = "java"
   }
 
+  use  "folke/which-key.nvim"
+
   use 'onsails/lspkind.nvim'
   use 'windwp/nvim-autopairs'
   use 'nvim-treesitter/nvim-treesitter-context'
