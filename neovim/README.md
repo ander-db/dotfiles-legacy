@@ -48,11 +48,12 @@ local servers = { List of LSP servers... }
   * **Autoclose parenthesis**: windwp/nvim-autopairs
   * **Autocomplete icons**: onsails/lspkind.nvim
   * **Snippets**: L3MON4D3/LuaSnip
+  * **Illuminate**: RRethy/vim-illuminate
   
 
 ## Keymaps cheat sheet
 ### General
-  * `<C-t>` -> Open/Close nvim-tree
+  * `<space>` -> Leader
   * `:buffers <Tab>` -> List of buffers
   * `:bd` -> Close buffer
   * `<leader>h` -> Navigate to the left
@@ -61,6 +62,7 @@ local servers = { List of LSP servers... }
   * `<leader>l` -> Navigate to the right
 
 ### nvim-tree
+  * `<C-t>` -> Open/Close nvim-tree
   * `u` -> Set directory up
   * `i` -> Set directory
   * `<C-x>` -> split horizontally
@@ -84,9 +86,18 @@ local servers = { List of LSP servers... }
   * `K` -> Hover information
   * `gd` -> Go to definition
   * `gD` -> Go to Declaration
-  * `<space>rn` -> Rename
-  * `<space>ca` -> Code action
-  * `<space>f` -> Auto formatting
+  * `<leader>rn` -> Rename
+  * `<leader>ca` -> Code action
+  * `<leader>f` -> Auto formatting
+
+
+### Gitsigns
+  * `<leader>gp` -> Git preview chunk
+  * `<leader>gb` -> Git blame line
+  * `<leader>gt` -> Git toggle line blame
+  * `<leader>gd` -> Git diff chunk
+  * `<leader>gD` -> Git diff full file
+
 
 ### LSPInstaller
   * `:LspInstallInfo`
