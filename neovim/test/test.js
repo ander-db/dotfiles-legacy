@@ -25,4 +25,3 @@ const resta = (x, y) => {
 const resultado = resta(1, 2);
 console.log(resultado);
 
-asdfasf; asdlkfjasl;dfjkjsdaf;kaskdjfasjhf-
