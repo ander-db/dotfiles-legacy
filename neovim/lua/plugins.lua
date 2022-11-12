@@ -23,6 +23,8 @@ return require('packer').startup(function(use)
 
   use 'RRethy/vim-illuminate'
 
+  use 'nvim-telescope/telescope-project.nvim'
+
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
     requires = {
@@ -36,11 +38,20 @@ return require('packer').startup(function(use)
     ft = "java"
   }
 
-  use  "folke/which-key.nvim"
+  use "folke/which-key.nvim"
+
+  use 'glepnir/dashboard-nvim'
+
+  --  use {
+  --    'goolord/alpha-nvim',
+  --    requires = { 'kyazdani42/nvim-web-devicons' },
+  --    config = function ()
+  --        require'alpha'.setup(require'alpha.themes.startify'.config)
+  --    end
+  --}
 
   use 'onsails/lspkind.nvim'
   use 'windwp/nvim-autopairs'
   use 'nvim-treesitter/nvim-treesitter-context'
   use 'L3MON4D3/LuaSnip'
 end)
-

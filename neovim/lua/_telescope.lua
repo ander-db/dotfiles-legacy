@@ -25,8 +25,11 @@ require('telescope').setup {
     --   extension_config_key = value,
     -- }
     -- please take a look at the readme of the extension you want to configure
+
   }
 }
+
+require'telescope'.load_extension('project')
 
 local map = require("utils").map
 
