@@ -83,6 +83,11 @@ db.custom_footer = footer_1
 
 db.custom_center = {
   { icon_hl = { fg = "yellow" },
+    icon = '  ',
+    desc = 'New File',
+    action = 'ene!',
+  },
+  { icon_hl = { fg = "yellow" },
     icon = '  ',
     desc = 'Find  File',
     action = 'Telescope find_files',

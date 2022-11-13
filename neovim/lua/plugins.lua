@@ -42,6 +42,11 @@ return require('packer').startup(function(use)
 
   use 'glepnir/dashboard-nvim'
 
+  use {
+    "rcarriga/nvim-dap-ui",
+    requires = { "mfussenegger/nvim-dap" }
+  }
+
   use 'onsails/lspkind.nvim'
   use 'windwp/nvim-autopairs'
   use 'nvim-treesitter/nvim-treesitter-context'
