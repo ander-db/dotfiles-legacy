@@ -105,5 +105,12 @@ wk.register({
     ["<leader>gt"] = "Git toggle line blame (GitSigns)",
     ["<leader>gd"] = "Git diff chunk (GitSigns)",
     ["<leader>gD"] = "Git diff full file (GitSigns)",
+
+    ["<leader>dt"] = "Debuger UI toggle (DAP-UI)",
+    ["<leader>dc"] = "Debugger continue (DAP)",
+    ["<leader>di"] = "Debugger step into (DAP)",
+    ["<leader>do"] = "Debugger step over (DAP)",
+    ["<leader>du"] = "Debugger setp out/up (DAP)",
+    ["<leader>db"] = "Debugger toggle breakpoint (DAP)",
 })
 

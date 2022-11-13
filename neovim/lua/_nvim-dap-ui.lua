@@ -86,6 +86,7 @@ map("n", "<leader>dt", ":lua require('dapui').toggle()<CR>")
 map("n", "<leader>dc", ":DapContinue<CR>")
 map("n", "<leader>di", ":DapStepInto<CR>")
 map("n", "<leader>do", ":DapStepOver<CR>")
+map("n", "<leader>du", ":DapStepOut<CR>")
 
 map("n", "<leader>db", ":DapToggleBreakpoint<CR>")
 
