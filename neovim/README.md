@@ -51,10 +51,13 @@ local servers = { List of LSP servers... }
   * **Illuminate**: RRethy/vim-illuminate
   * **Which-key**: folke/which-key.nvim
   * **Dashboard**: glepnir/dashboard-nvim
+  * **DAP-UI**: rcarriga/nvim-dap-ui
+  * **DAP**: mfussenegger/nvim-dap
   
 
 ## Keymaps cheat sheet
 ### General
+  * `:WhichKey` -> Keymap cheat sheet
   * `<space>` -> Leader
   * `:buffers <Tab>` -> List of buffers
   * `:bd` -> Close buffer
