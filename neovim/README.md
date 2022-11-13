@@ -27,9 +27,9 @@ local servers = { List of LSP servers... }
 ```
 
 ## Screenshots
-![Screen](./assets/Screen_1.png)
-![Telescope](./assets/Telescope_1.png)
-![Debug](./assets/Debug_1.png)
+![Screen](../assets/Screen_1.png)
+![Telescope](../assets/Telescope_1.png)
+![Debug](../assets/Debug_1.png)
 
 
 ## List of pluggins
