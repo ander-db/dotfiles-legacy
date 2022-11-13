@@ -1,6 +1,8 @@
 # Personal Neovim Configuration
 
 
+
+
 ## How to set up
 
 Install packer:
@@ -25,6 +27,8 @@ Edit `.config/lua/_nvim-lspconfig.lua` and add the Language Servers Installed:
 local servers = { List of LSP servers... }
 ```
 
+## Screenshots
+![Dashboard](../assets/Dasboard.png)
 
 
 ## List of pluggins
