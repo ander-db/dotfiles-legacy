@@ -102,6 +102,11 @@ db.custom_center = {
     desc = 'Telescope live grep',
     action = 'Telescope live_grep',
   },
+  { icon_hl = { fg = "red" },
+    icon = '  ',
+    desc = 'Exit',
+    action = 'q!',
+  },
 }
 
 db.footer_pad = 20
