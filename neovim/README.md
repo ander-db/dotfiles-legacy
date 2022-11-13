@@ -100,6 +100,13 @@ local servers = { List of LSP servers... }
   * `<leader>gd` -> Git diff chunk
   * `<leader>gD` -> Git diff full file
 
+### Debug
+  * `<leader>dt` -> Debuger UI toggle (DAP-UI)
+  * `<leader>dc` -> Debugger continue (DAP)
+  * `<leader>di` -> Debugger step into (DAP)
+  * `<leader>do` -> Debugger step over (DAP)
+  * `<leader>du` -> Debugger setp out/up (DAP)
+  * `<leader>db` -> Debugger toggle breakpoint (DAP)
 
 ### LSPInstaller
   * `:LspInstallInfo`
