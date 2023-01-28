@@ -112,5 +112,9 @@ wk.register({
     ["<leader>do"] = "Debugger step over (DAP)",
     ["<leader>du"] = "Debugger setp out/up (DAP)",
     ["<leader>db"] = "Debugger toggle breakpoint (DAP)",
+
+    ["zz"] = "Set current line to the middle of the screen.",
+    ["zt"] = "Set current line to the top of the screen.",
+    ["zb"] = "Set current line to the bottom of the screen."
 })
 
