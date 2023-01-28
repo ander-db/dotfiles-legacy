@@ -38,9 +38,9 @@ local servers = { List of LSP servers... }
   * **Gruvbox**: morhetz/gruvbox
   * **Dracula**: dracula/vim
   
-  * **File explorer**: kyazdani42/nvim-tree.lua
+  * **File explorer**: nvim-tree/nvim-tree.lua
   * **Info line**: nvim-lualine/lualine.nvim
-  * **Scroll smooth**: karb94/neoscroll.nvim
+  * **Scroll smooth**: karb94/neoscroll.nvim -> Not activated.
   * **Git**: lewis6991/gitsigns.nvim
   * **LSP**: neovim/nvim-lspconfig
   * **LSPInstaller**: williamboman/nvim-lsp-installer
@@ -70,6 +70,9 @@ local servers = { List of LSP servers... }
   * `<leader>j` -> Navigate down
   * `<leader>k` -> Navigate up
   * `<leader>l` -> Navigate to the right
+  * `zz` -> Set current line to the middle of the screen.
+  * `zt` -> Set current line to the top of the screen.
+  * `zb` -> Set current line to the bottom of the screen.
 
 ### nvim-tree
   * `<C-t>` -> Open/Close nvim-tree
