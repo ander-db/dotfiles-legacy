@@ -1,4 +1,6 @@
---
+vim.cmd("hi IlluminatedWordRead guibg=#525252 gui=none")
+-- vim.cmd("hi IlluminatedWordRead  guibg=#525252 gui=none")
+-- vim.cmd("hi IlluminatedWordWrite guibg=#525252 gui=none")
 
 -- default configuration
 require('illuminate').configure({
@@ -10,7 +12,7 @@ require('illuminate').configure({
         'regex',
     },
     -- delay: delay in milliseconds
-    delay = 100,
+    delay = 50,
     -- filetype_overrides: filetype specific overrides.
     -- The keys are strings to represent the filetype while the values are tables that
     -- supports the same keys passed to .configure except for filetypes_denylist and filetypes_allowlist
@@ -46,7 +48,7 @@ require('illuminate').configure({
     -- If nil, vim-illuminate will be disabled for large files.
     large_file_overrides = nil,
     -- min_count_to_highlight: minimum number of matches required to perform highlighting
-    min_count_to_highlight = 1,
+    min_count_to_hifalseghlight = 1,
     termguicolors = true,
 })
 
