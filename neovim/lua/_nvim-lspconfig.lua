@@ -1,5 +1,5 @@
 local nvim_lsp = require('lspconfig')
-local servers = { 'pyright', 'tsserver', 'marksman', 'sumneko_lua', 'clangd', 'cssls', 'jdtls', 'rust_analyzer', 'solang' }
+local servers = { 'pyright', 'tsserver', 'marksman', 'sumneko_lua', 'clangd', 'cssls', 'jdtls', 'rust_analyzer', 'jsonls'}
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
@@ -38,3 +38,12 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities
   }
 end
+
+
+--nvim_lsp.solang.setup {
+--  cmd = { "solang", "language-server","--target","evm","--importmap","@openzeppelin=node_modules/@openzeppelin"}
+--}
+
+--nvim_lsp.solc.setup({
+--	cmd = { 'solc', '--lsp' }
+--})

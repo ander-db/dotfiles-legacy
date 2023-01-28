@@ -6,7 +6,14 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'morhetz/gruvbox'
   use 'dracula/vim'
-  use 'kyazdani42/nvim-tree.lua'
+  --use 'kyazdani42/nvim-tree.lua'
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
   use 'nvim-lualine/lualine.nvim'
   use 'karb94/neoscroll.nvim'
   use 'lewis6991/gitsigns.nvim'
