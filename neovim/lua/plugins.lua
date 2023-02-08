@@ -58,4 +58,5 @@ return require('packer').startup(function(use)
   use 'windwp/nvim-autopairs'
   use 'nvim-treesitter/nvim-treesitter-context'
   use 'L3MON4D3/LuaSnip'
+  use 'rhysd/vim-grammarous' -- Grammar
 end)
