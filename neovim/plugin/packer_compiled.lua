@@ -139,13 +139,6 @@ _G.packer_plugins = {
     path = "/home/anderdb/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
     url = "https://github.com/rcarriga/nvim-dap-ui"
   },
-  ["nvim-jdtls"] = {
-    loaded = false,
-    needs_bufread = false,
-    only_cond = false,
-    path = "/home/anderdb/.local/share/nvim/site/pack/packer/opt/nvim-jdtls",
-    url = "https://github.com/mfussenegger/nvim-jdtls"
-  },
   ["nvim-lsp-installer"] = {
     loaded = true,
     path = "/home/anderdb/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
@@ -214,13 +207,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
-vim.cmd [[augroup packer_load_aucmds]]
-vim.cmd [[au!]]
-  -- Filetype lazy-loads
-time([[Defining lazy-load filetype autocommands]], true)
-vim.cmd [[au FileType java ++once lua require("packer.load")({'nvim-jdtls'}, { ft = "java" }, _G.packer_plugins)]]
-time([[Defining lazy-load filetype autocommands]], false)
-vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

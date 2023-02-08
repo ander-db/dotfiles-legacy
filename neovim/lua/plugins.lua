@@ -39,11 +39,11 @@ return require('packer').startup(function(use)
     }
   }
 
-  use {
-    'mfussenegger/nvim-jdtls',
-    disable = false,
-    ft = "java"
-  }
+--  use {
+--    'mfussenegger/nvim-jdtls',
+--    disable = false,
+--    ft = "java"
+--  }
 
   use "folke/which-key.nvim"
 
