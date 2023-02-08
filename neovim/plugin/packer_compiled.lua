@@ -194,6 +194,11 @@ _G.packer_plugins = {
     path = "/home/anderdb/.local/share/nvim/site/pack/packer/start/vim",
     url = "https://github.com/dracula/vim"
   },
+  ["vim-grammarous"] = {
+    loaded = true,
+    path = "/home/anderdb/.local/share/nvim/site/pack/packer/start/vim-grammarous",
+    url = "https://github.com/rhysd/vim-grammarous"
+  },
   ["vim-illuminate"] = {
     loaded = true,
     path = "/home/anderdb/.local/share/nvim/site/pack/packer/start/vim-illuminate",
