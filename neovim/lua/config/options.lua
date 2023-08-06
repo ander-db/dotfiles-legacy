@@ -2,14 +2,14 @@ local opt = vim.opt
 local cache_dir = vim.env.HOME .. '/.cache/nvim/'
 
 vim.g.mapleader    = ' ';
-opt.relativenumber = true
-opt.number         = true
 opt.tabstop        = 2
 opt.shiftwidth     = 2
+opt.showtabline    = 2
+opt.relativenumber = true
+opt.number         = true
 opt.expandtab      = true
 opt.smarttab       = true
 opt.autoindent     = true
-opt.showtabline    = 2
 opt.cursorline     = true
 opt.splitbelow     = true
 opt.splitright     = true

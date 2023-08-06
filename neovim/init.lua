@@ -1,24 +1,7 @@
-require("core.general")
-require("core.keymaps")
+require("config.options")
+require("config.keymaps")
 
-require("plugins")
-
-require("_illuminate")
-require("_gruvbox")
-require("_nvim-tree")
-require("_lualine")
-require("_neoscroll")
-require("_gitsigns")
-require("_nvim-lsp-installer")
-require("_nvim-lspconfig")
-require("_nvim-cmp")
-require("_nvim-treesitter")
-require("_telescope")
-require("_nvim-autopairs")
-require("_nvim-treesitter-context")
-require("_which-key")
-require("_dashboard-nvim")
-require("_nvim-dap-ui")
+require("config.lazy")
 
 -- 
 vim.cmd("hi IlluminatedWordRead guibg=#525252 gui=none")
